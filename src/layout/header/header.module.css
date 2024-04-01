@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  padding-inline: var(--global-padding-inline);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-dark);
+}
+
+.logo {
+  height: auto;
+  width: clamp(120px, 20vw, 172px);
+}
+
+/* .favoritos {
+  &:hover .favoritos {
+    filter: brigthness(0%);
+    width: 30px;
+    height: 28px;
+  }
+} */
+
+.favoritos:hover {
+  filter: brigthness(0);
+  fill: black;
+  /* width: 30px;
+  height: 28px; */
+}
+
+/* @media screen and (max-width: 768px) {
+  .header {
+    border-bottom: 1px solid var(--grey-dark);
+  }
+} */

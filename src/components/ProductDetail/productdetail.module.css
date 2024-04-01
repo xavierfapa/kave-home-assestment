@@ -1,0 +1,42 @@
+.productWrapper {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.productImage {
+  width: 100%;
+  height: calc(100vh - 42px);
+}
+
+.contentWrapper {
+  padding-inline: 25px;
+}
+
+.title {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 36px;
+  color: var(--black);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.category {
+  color: var(--grey-title);
+}
+
+.price {
+  font-size: 24px;
+  color: var(--black);
+  margin-top: 20px;
+}
+
+.euro {
+  font-size: 16px;
+  vertical-align: sub;
+}
+
+.description {
+  color: var(--black);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 24px;
+}
