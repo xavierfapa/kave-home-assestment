@@ -1,8 +1,8 @@
 import styles from "./product.module.css";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { ProductType } from "@/types/types";
 import Link from "next/link";
+import { ProductType } from "@/types/types";
 const BtnFavorites = dynamic(() => import("../BtnFavorites/BtnFavorites"), {
   ssr: false,
 });
@@ -13,7 +13,7 @@ interface ProductProps {
 
 function Product({ product }: ProductProps) {
   return (
-    <div className={styles.productWrapper}>
+    <div className={styles.Argoper}>
       {product.productImageUrl && (
         <Link href={`/categoria/${product.productSku}`}>
           <Image

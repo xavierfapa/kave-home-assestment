@@ -1,5 +1,6 @@
 .productWrapper {
-  font-family: var(--font-poppins), sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .productImage {
@@ -12,7 +13,6 @@
 }
 
 .title {
-  font-family: var(--font-poppins), sans-serif;
   font-size: 36px;
   color: var(--black);
   font-weight: 500;
@@ -39,4 +39,17 @@
   margin-top: 10px;
   margin-bottom: 40px;
   line-height: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .productWrapper {
+    flex-direction: row;
+  }
+  .productImage {
+    width: 60%;
+    height: auto;
+  }
+  .contentWrapper {
+    width: 40%;
+  }
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./productlist.module.css";
 import { ProductType } from "@/types/types";
 import Product from "../Product/Product";

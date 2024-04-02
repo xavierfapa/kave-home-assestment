@@ -21,7 +21,6 @@
 
 .tituloCategoria {
   line-height: 17px;
-  font-family: var(--font-poppins);
   text-decoration: underline;
   color: var(--black);
   padding: 4px 10px;

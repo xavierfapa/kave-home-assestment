@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/* Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --negro: #ececec;
-  }
-}
-
-/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -98,16 +90,6 @@ q:after {
   content: none;
 }
 
-/* Configuramos el texto que seleccionamos */
-::-moz-selection {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form,
 input,
@@ -147,8 +129,6 @@ svg {
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: var(--tipo-principal);
-  color: var(--negro);
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;

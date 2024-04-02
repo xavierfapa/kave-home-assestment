@@ -2,6 +2,15 @@
 import React from "react";
 import { useFavorites } from "@/context/favoritesContext";
 import ProductList from "@/components/ProductList/ProductList";
+import { Metadata } from "next";
+
+// export async function generateMetadata(): Promise<Metadata> {
+//   return {
+//     title: "some title",
+//     description: "some description",
+//   };
+// }
+
 function Page() {
   const { favorites } = useFavorites();
 

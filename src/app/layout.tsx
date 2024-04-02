@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import { noto_sans, poppins } from "./fonts";
 import "./reset.css";
 import "./globals.css";
+import type { Metadata } from "next";
+import { noto_sans, poppins } from "./fonts";
 import Header from "@/layout/header/Header";
 import Providers from "@/context/providers";
 

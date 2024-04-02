@@ -1,9 +1,9 @@
 "use client";
 import styles from "./btnfavorites.module.css";
 import Image from "next/image";
-import { useFavorites } from "@/context/favoritesContext";
 import { useState } from "react";
 import { ProductType } from "@/types/types";
+import { useFavorites } from "@/context/favoritesContext";
 
 interface ProductProps {
   product: ProductType;

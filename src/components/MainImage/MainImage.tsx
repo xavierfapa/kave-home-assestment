@@ -31,7 +31,6 @@ function MainImage() {
         width={500}
         height={600}
         alt=""
-        // src="/home_mobile.png"
         src={isMobile ? "/home_mobile.png" : "/home_desktop.png"}
       />
       <h1 className={styles.title}>

@@ -1,7 +1,6 @@
 import styles from "./productdetail.module.css";
-import { ProductType } from "@/types/types";
 import Image from "next/image";
-import React from "react";
+import { ProductType } from "@/types/types";
 
 interface ProductDetailProps {
   product: ProductType;
