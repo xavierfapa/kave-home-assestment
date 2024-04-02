@@ -11,7 +11,7 @@ function Header() {
           width={25}
           height={25}
           className={styles.logo}
-          alt="logo"
+          alt="logo Kave Home"
           src="/logo_Kave_Home.svg"
         />
       </Link>

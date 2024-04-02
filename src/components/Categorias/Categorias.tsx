@@ -12,7 +12,7 @@ function Categorias() {
 
   return (
     <div className={styles.categoriasWrapper}>
-      <h3 className={styles.titulo}>Inspírate</h3>
+      <p className={styles.titulo}>Inspírate</p>
       <div className={styles.listaCategorias}>
         {categorias.map((categoria) => (
           <p
