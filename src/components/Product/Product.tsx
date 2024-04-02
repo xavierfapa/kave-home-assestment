@@ -15,7 +15,10 @@ function Product({ product }: ProductProps) {
   return (
     <div className={styles.productWrapper}>
       {product.productImageUrl && (
-        <Link href={`/categoria/${product.productSku}`}>
+        <Link
+          href={`/categoria/${product.productSku}`}
+          aria-label={product.productName}
+        >
           <Image
             width={300}
             height={300}

@@ -6,7 +6,7 @@ import Like from "@/components/Like/Like";
 function Header() {
   return (
     <header className={styles.header}>
-      <Link href="/">
+      <Link href="/" aria-label="home">
         <Image
           width={25}
           height={25}
