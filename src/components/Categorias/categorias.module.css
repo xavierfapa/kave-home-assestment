@@ -5,10 +5,10 @@
 
 .titulo {
   font-size: 24px;
-  font-size: clamp(24px, 25px, 26px);
-  font-family: var(--font-noto-sans);
+  font-family: var(--font-noto-serif);
   padding: 60px 0px 20px 0px;
   text-align: center;
+  color: var(--grey);
 }
 
 .listaCategorias {
@@ -24,6 +24,7 @@
   text-decoration: underline;
   color: var(--black);
   padding: 4px 10px;
+  font-size: 14px;
 }
 
 .bk {

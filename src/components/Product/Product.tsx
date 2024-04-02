@@ -13,7 +13,7 @@ interface ProductProps {
 
 function Product({ product }: ProductProps) {
   return (
-    <div className={styles.Argoper}>
+    <div className={styles.productWrapper}>
       {product.productImageUrl && (
         <Link href={`/categoria/${product.productSku}`}>
           <Image
@@ -27,7 +27,9 @@ function Product({ product }: ProductProps) {
       )}
       <h2 className={styles.title}>{product.productName.slice(0, 20)}</h2>
       <p className={styles.price}>{product.productPrice}€</p>
-      <BtnFavorites product={product} />
+      <div className={styles.buttonWrapper}>
+        <BtnFavorites product={product} />
+      </div>
     </div>
   );
 }

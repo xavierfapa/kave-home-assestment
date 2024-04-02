@@ -14,6 +14,6 @@
 }
 
 .favoritos:hover {
-  /* filter: brigthness(0); */
+  filter: brigthness(0);
   fill: black;
 }

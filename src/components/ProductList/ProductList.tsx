@@ -9,9 +9,12 @@ interface ProductListProps {
 function ProductList({ productList }: ProductListProps) {
   return (
     <div className={styles.productList}>
-      {productList.map((product) => (
-        <Product key={product.productSku} product={product} />
-      ))}
+      {productList.map(
+        (product) =>
+          product.productImageUrl && (
+            <Product key={product.productSku} product={product} />
+          )
+      )}
     </div>
   );
 }

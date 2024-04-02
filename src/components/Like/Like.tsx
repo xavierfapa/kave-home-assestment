@@ -3,7 +3,7 @@ import React from "react";
 function Like() {
   return (
     <svg
-      width="22"
+      width="21"
       height="19"
       viewBox="0 0 23 21"
       xmlns="http://www.w3.org/2000/svg"

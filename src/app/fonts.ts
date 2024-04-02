@@ -1,8 +1,8 @@
-import { Noto_Sans, Poppins } from "next/font/google";
+import { Noto_Serif, Poppins } from "next/font/google";
 
-export const noto_sans = Noto_Sans({
+export const noto_serif = Noto_Serif({
   subsets: ["latin"],
-  variable: "--font-noto-sans",
+  variable: "--font-noto-serif",
   display: "swap",
 });
 

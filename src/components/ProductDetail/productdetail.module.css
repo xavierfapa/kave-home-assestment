@@ -3,6 +3,17 @@
   flex-direction: column;
 }
 
+.imgWrapper {
+  position: relative;
+}
+
+.buttonWrapper {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
 .productImage {
   width: 100%;
   height: calc(100vh - 42px);
@@ -23,6 +34,11 @@
   color: var(--grey-title);
 }
 
+.priceWrapper {
+  position: relative;
+  width: fit-content;
+}
+
 .price {
   font-size: 24px;
   color: var(--black);
@@ -30,8 +46,10 @@
 }
 
 .euro {
-  font-size: 16px;
-  vertical-align: sub;
+  position: absolute;
+  top: 1px;
+  right: -16px;
+  font-size: 18px;
 }
 
 .description {
@@ -41,15 +59,21 @@
   line-height: 24px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
+  .buttonWrapper {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
   .productWrapper {
     flex-direction: row;
   }
   .productImage {
-    width: 60%;
-    height: auto;
+    height: calc(100vh - 52px);
+    min-width: 55vw;
   }
   .contentWrapper {
-    width: 40%;
+    width: 100%;
   }
 }

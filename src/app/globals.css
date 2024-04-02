@@ -18,15 +18,15 @@
   flex-direction: column;
   gap: 10px;
   color: var(--grey);
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 45px;
+  padding-bottom: 40px;
   text-align: center;
   & .title {
-    font-family: var(--font-noto-sans);
+    font-family: var(--font-noto-serif);
     font-size: 26px;
   }
   & .subtitle {
-    font-family: var(--font-noto-sans);
+    font-family: var(--font-noto-serif);
     font-size: 16px;
   }
 }
@@ -37,6 +37,8 @@
 
 @media only screen and (min-width: 768px) {
   .titleWrapper {
+    padding-top: 65px;
+    padding-bottom: 60px;
     & .title {
       font-size: 32px;
     }

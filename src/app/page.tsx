@@ -13,16 +13,14 @@ interface searchParams {
 
 export default async function Home({ searchParams }: searchParams) {
   const products = await getProducts();
-  // console.log("products", products);
+
   const page = searchParams["page"] ?? "1";
-  const per_page = searchParams["per_page"] ?? "3";
+  const per_page = searchParams["per_page"] ?? "20";
 
   const start = (parseInt(page) - 1) * parseInt(per_page);
   const end = start + parseInt(per_page);
 
   const entries = products.results.slice(start, end);
-
-  // console.log("hola", entries);
 
   return (
     <main>
@@ -35,6 +33,7 @@ export default async function Home({ searchParams }: searchParams) {
       <PaginationControls
         hasNextPage={end < products.results.length}
         hasPrevPage={start > 0}
+        productsLength={products.results.length}
       />
     </main>
   );

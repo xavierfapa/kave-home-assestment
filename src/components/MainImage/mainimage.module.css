@@ -31,7 +31,7 @@
   .mainImgContainer {
     & .mainImage {
       max-height: calc(100vh - 42px);
-      object-position: center;
+      object-position: 50% 60%;
     }
     & .title {
       font-size: clamp(32px, 4vw, 56px);
