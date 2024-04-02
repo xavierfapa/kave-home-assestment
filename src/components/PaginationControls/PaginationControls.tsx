@@ -19,7 +19,7 @@ function PaginationControls({
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const page = searchParams.get("page") ?? "1";
-  const per_page = searchParams.get("per_page") ?? "5";
+  const per_page = searchParams.get("per_page") ?? "20";
 
   useEffect(() => {
     const page = parseInt(searchParams.get("page") ?? "1");
